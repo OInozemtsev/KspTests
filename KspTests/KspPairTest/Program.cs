@@ -10,7 +10,7 @@ namespace KspPairTest
             //Решение задания №2
             CreateCollectionService creator = new CreateCollectionService();
             AggregationService aggregator = new AggregationService();
-            int paramCount = 4;
+            int paramCount = 2;
             var sumDictionary = aggregator.GetSumAggregations(creator.GetRandomCollection(), paramCount);
             foreach (var pair in sumDictionary)
             {
